@@ -1,6 +1,6 @@
 package org.java.exercise;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements Vola {
 
     private String habitat;
     private boolean addomesticata;
@@ -19,6 +19,11 @@ public class Aquila extends Animale {
     @Override
     public void mangia() {
         System.out.println("Carne");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!");
     }
 
 }

@@ -2,6 +2,14 @@ package org.java.exercise;
 
 public class Main {
 
+    public static void faiVolare(Vola animale) {
+        animale.vola();
+    }
+
+    public static void faiNuotare(Nuota animale) {
+        animale.nuota();
+    }
+
     public static void main(String[] args) {
         
         Cane fuffi = new Cane("marrone", "media");
@@ -23,5 +31,8 @@ public class Main {
         passerotto.dormi();
         aquilaReale.dormi();
         piccoloDelfino.dormi();
+
+        faiNuotare(piccoloDelfino);
+        faiVolare(aquilaReale);
     }
 }

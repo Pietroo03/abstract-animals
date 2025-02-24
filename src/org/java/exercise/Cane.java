@@ -1,6 +1,6 @@
 package org.java.exercise;
 
-public class Cane extends Animale {
+public class Cane extends Animale implements Nuota{
 
     private String colorePelo;
     private String taglia;
@@ -19,6 +19,11 @@ public class Cane extends Animale {
     @Override
     public void mangia() {
         System.out.println("Mangia principalmente carne");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!");
     }
 
 
